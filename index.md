@@ -6,7 +6,7 @@ title: Yong-Woo Lee
 
 Welcome! I am a phd student studying in the Department of Mathematical Sciences in Seoul National University, advised by [Sung-Soo Byun](https://sites.google.com/view/sungsoobyun/welcome)). I am interested in probability theory and complex analysis, especially on random matrix theory.
 
-I am a member of [SNU Probability Group](https://sites.google.com/view/snuprob/).
+I am a student member of [SNU Probability Group](https://sites.google.com/view/snuprob/).
 
 # Publication
 1. (with [Sung-Soo Byun](https://sites.google.com/view/sungsoobyun/welcome)) [*Finite size corrections for real eigenvalues of the elliptic Ginibre matrices*](https://www.worldscientific.com/doi/10.1142/S2010326324500059?srsltid=AfmBOoqBCbmx1-TwhTn2qpICw3YFLWoOlZ29zpX74y6pWTUlVSmrOH5O), ***Random Matrices Theory Appl.*** (2024) [*arXiv link*](https://arxiv.org/abs/2310.09823)
