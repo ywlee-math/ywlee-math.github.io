@@ -9,19 +9,21 @@ Welcome! I am a PhD student studying in the Department of Mathematical Sciences 
 I am a student member of [SNU Probability Group](https://sites.google.com/view/snuprob/).
 
 ## Publication
-<ul>
+<ol>
   {% for publication in site.data.publications %}
     <li>
-      <strong>{{ publication.title }}</strong>, <em>{{ publication.journal }}</em> ({{ publication.year }}), 
+      <strong>{{ publication.title }}</strong>, <em>{{ publication.journal }}</em> ({{ publication.year }}) <br>
+      Authors: {{ publication.authors }} <br>
       <a href="{{ publication.link }}" target="_blank">[Journal Link]</a>
-      {% if publication.arxiv %}<a href="{{ publication.arxiv }}" target="_blank">[arXiv Link]</a>{% endif %}
-      <br>Authors: {{ publication.authors }}
+      {% if publication.arxiv %}
+        <a href="{{ publication.arxiv }}" target="_blank">[arXiv Link]</a>
+      {% endif %}
     </li>
   {% endfor %}
-</ul>
+</ol>
 
 ## Talks and Posters
-<ul>
+<ol>
   {% for talk in site.data.talks %}
     <li>
       <strong>{{ talk.title }}</strong>, {{ talk.title }} <br>
@@ -32,6 +34,6 @@ I am a student member of [SNU Probability Group](https://sites.google.com/view/s
       {% endif %}
     </li>
   {% endfor %}
-</ul>
+</ol>
 
 <p>Last updated: {{ date: '%Y-%m-%d' }}</p>
