@@ -1,4 +1,4 @@
-`---
+---
 title: Yong-Woo Lee
 ---
 
@@ -25,7 +25,7 @@ I am a student member of [SNU Probability Group](https://sites.google.com/view/s
 <ol>
   {% for talk in site.data.talks %}
     <li>
-      {% if talk.type == "poster" %} <strong>(Poster)</strong> () {% endif %} {{ talk.title }}, {{ talk.location }},
+      {% if talk.type == "poster" %} <strong>(Poster)</strong> () {% endif %} {{ talk.title }}, {{ talk.location }}.
       {% if talk.link %}
         <a href="{{ talk.link }}" target="_blank">[More Info]</a>
       {% endif %}
