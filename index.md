@@ -8,10 +8,11 @@ Welcome! I am a phd student studying in the Department of Mathematical Sciences 
 
 I am a student member of [SNU Probability Group](https://sites.google.com/view/snuprob/).
 
-# Publication
-1. (with [Sung-Soo Byun](https://sites.google.com/view/sungsoobyun/welcome)) [*Finite size corrections for real eigenvalues of the elliptic Ginibre matrices*](https://www.worldscientific.com/doi/10.1142/S2010326324500059?srsltid=AfmBOoqBCbmx1-TwhTn2qpICw3YFLWoOlZ29zpX74y6pWTUlVSmrOH5O), ***Random Matrices Theory Appl.*** (2024) [*arXiv link*](https://arxiv.org/abs/2310.09823)
+## Publication
+1. [*Finite size corrections for real eigenvalues of the elliptic Ginibre matrices*](https://www.worldscientific.com/doi/10.1142/S2010326324500059?srsltid=AfmBOoqBCbmx1-TwhTn2qpICw3YFLWoOlZ29zpX74y6pWTUlVSmrOH5O), *Random Matrices Theory Appl.* (2024), [*arXiv link*](https://arxiv.org/abs/2310.09823)
+    - with [Sung-Soo Byun](https://sites.google.com/view/sungsoobyun/welcome)
 
-# Talks and Posters
+## Talks and Posters
 1. [Probability Workshop in Korea 2025](https://sites.google.com/view/pwk2025/home), Jeongseon, Korea.
 2. The 2nd Workshop on Integrable Systems and Random Matrix Theory, Dongguan, China.
 3. **(Poster)** [XX Brunel-Bielefeld Workshop on Random Matrix Theory and Applications](https://www.brunel.ac.uk/news-and-events/events/2024/XX-Brunel-Bielefeld-Workshop-on-Random-Matrix-Theory-and-Applications), London, UK.
