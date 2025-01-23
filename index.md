@@ -25,12 +25,9 @@ I am a student member of [SNU Probability Group](https://sites.google.com/view/s
 <ol>
   {% for talk in site.data.talks %}
     <li>
-      {% if talk.type == "poster" %} <strong>(Poster)</strong> {% endif %} {{ talk.title }}, {{ talk.location }}.
-      {% if talk.link %}
-        <a href="{{ talk.link }}" target="_blank">[More Info]</a>
-      {% endif %}
+      {% if talk.type == "poster" %} <strong>(Poster)</strong> {% endif %}
+      {% if talk.link != "" %}<a href="{{ talk.link }}" target="_blank">{{ talk.title }}</a>{% endif %}{% if talk.link == "" %}{{ talk.title }}{% endif %},
+      {{ talk.location }}.
     </li>
   {% endfor %}
 </ol>
-
-<p>Last updated: {{ date: '%Y-%m-%d' }}</p>
