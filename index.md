@@ -19,5 +19,3 @@ Welcome! I am a phd student studying in the Department of Mathematical Sciences 
 9. [Probability Workshop in Korea 2024](https://sites.google.com/view/probability-in-korea-2024), Sokcho, Korea.
 10. [Bielefeld-Melbourne-Seoul Random Matrix Seminar](https://sites.google.com/view/bms-rmt-seminar/home), online.
 11. [KIAS Analysis, PDE & Probability Seminar](http://newton.kias.re.kr/~appseminar/), Seoul, Korea.
-
-From Index
