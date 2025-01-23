@@ -25,7 +25,7 @@ I am a student member of [SNU Probability Group](https://sites.google.com/view/s
 <ol>
   {% for talk in site.data.talks %}
     <li>
-      {{ talk.title }}, {{ talk.title }}, {{ talk.location }}, {{ talk.date }},
+      {{ talk.title }}, {{ talk.location }},
       {% if talk.link %}
         <a href="{{ talk.link }}" target="_blank">[More Info]</a>
       {% endif %}
