@@ -8,7 +8,29 @@ Welcome! I am a PhD student studying in the Department of Mathematical Sciences 
 
 I am a student member of [SNU Probability Group](https://sites.google.com/view/snuprob/).
 
-{% include publications.html %}
-{% include talks.html %}
+## Publication
+<ul>
+  {% for publication in site.data.publications %}
+    <li>
+      <strong>{{ publication.title }}</strong>, <em>{{ publication.journal }}</em> ({{ publication.year }}), 
+      <a href="{{ publication.link }}" target="_blank">[Journal Link]</a>
+      {% if publication.arxiv %}<a href="{{ publication.arxiv }}" target="_blank">[arXiv Link]</a>{% endif %}
+      <br>Authors: {{ publication.authors }}
+    </li>
+  {% endfor %}
+</ul>
 
-{% include last_updated.html %}
+<ul>
+  {% for talk in site.data.talks %}
+    <li>
+      <strong>{{ talk.title }}</strong>, {{ talk.title }} <br>
+      Location: {{ talk.location }} <br>
+      Date: {{ talk.date }} <br>
+      {% if talk.link %}
+        <a href="{{ talk.link }}" target="_blank">[More Info]</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<p>Last updated: {{ date: '%Y-%m-%d' }}</p>
