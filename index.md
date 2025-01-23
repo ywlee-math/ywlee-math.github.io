@@ -20,6 +20,7 @@ I am a student member of [SNU Probability Group](https://sites.google.com/view/s
   {% endfor %}
 </ul>
 
+## Talks and Posters
 <ul>
   {% for talk in site.data.talks %}
     <li>
