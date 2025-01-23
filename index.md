@@ -13,8 +13,7 @@ I am a student member of [SNU Probability Group](https://sites.google.com/view/s
   {% for publication in site.data.publications %}
     <li>
       <strong>{{ publication.title }}</strong>, <em>{{ publication.journal }}</em> ({{ publication.year }}) <br>
-      Authors: {{ publication.authors }} <br>
-      <a href="{{ publication.link }}" target="_blank">[Journal Link]</a>
+      Authors: {{ publication.authors }}, <a href="{{ publication.link }}" target="_blank">[Journal Link]</a>,
       {% if publication.arxiv %}
         <a href="{{ publication.arxiv }}" target="_blank">[arXiv Link]</a>
       {% endif %}
