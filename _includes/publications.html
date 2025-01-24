@@ -3,20 +3,20 @@
     <li>
       <strong>{{ publication.title }}</strong>, <em>{{ publication.journal }}</em> ({{ publication.year }}) <br>
       {% assign authors_list = publication.authors | split: "," %}
-      {% if publication.authors != "Yong-Woo Lee" %}
-        with 
-        {% for author in authors_list %}
+      {% assign filtered_authors = authors_list | where_exp: "author", "author != 'Yong-Woo Lee'" %}
+      {% if filtered_authors.size > 0 %}
+        (with 
+        {% for author in filtered_authors %}
           {% assign author = author | strip %}
-          {% if author != "Yong-Woo Lee" %}
-            {% assign coworker = site.data.coworkers | where: "name", author | first %}
-            {% if coworker %}
-              <a href="{{ coworker.website }}" target="_blank">{{ author }}</a>
-            {% else %}
-              {{ author }}
-            {% endif %}
-            {% if forloop.last == false %}, {% endif %}
+          {% assign coworker = site.data.coworkers | where: "name", author | first %}
+          {% if coworker %}
+            <a href="{{ coworker.website }}" target="_blank">{{ author }}</a>
+          {% else %}
+            {{ author }}
           {% endif %}
+          {% if forloop.last == false %}, {% endif %}
         {% endfor %}
+        )
       {% endif %}
       <a href="{{ publication.link }}" target="_blank">[Journal Link]</a>
       {% if publication.arxiv %}
