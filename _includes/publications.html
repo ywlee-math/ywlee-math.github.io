@@ -2,10 +2,19 @@
   {% for publication in site.data.publications %}
     <li>
       <strong>{{ publication.title }}</strong>, <em>{{ publication.journal }}</em> ({{ publication.year }}) <br>
+      {% assign authors_list = publication.authors | split: "," %}
       {% if publication.authors != "Yong-Woo Lee" %}
-        with {% for author in publication.authors %}
+        with 
+        {% for author in authors_list %}
+          {% assign author = author | strip %}
           {% if author != "Yong-Woo Lee" %}
-            {{ author }}{% if forloop.last == false %}, {% endif %}
+            {% assign coworker = site.data.coworkers | where: "name", author | first %}
+            {% if coworker %}
+              <a href="{{ coworker.website }}" target="_blank">{{ author }}</a>
+            {% else %}
+              {{ author }}
+            {% endif %}
+            {% if forloop.last == false %}, {% endif %}
           {% endif %}
         {% endfor %}
       {% endif %}
