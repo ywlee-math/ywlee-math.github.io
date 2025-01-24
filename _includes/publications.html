@@ -3,11 +3,11 @@
     <li>
       <strong>{{ publication.title }}</strong>, <em>{{ publication.journal }}</em> ({{ publication.year }}) <br>
       {% if publication.authors != "Yong-Woo Lee" %}
-        (with {% for author in publication.authors %}
+        with {% for author in publication.authors %}
           {% if author != "Yong-Woo Lee" %}
             {{ author }}{% if forloop.last == false %}, {% endif %}
           {% endif %}
-        {% endfor %})
+        {% endfor %}
       {% endif %}
       <a href="{{ publication.link }}" target="_blank">[Journal Link]</a>
       {% if publication.arxiv %}
