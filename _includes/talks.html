@@ -1,7 +1,7 @@
 <ol>
   {% for talk in site.data.talks %}
     <li>
-      {% if talk.type == "poster" %} <strong>(Poster)</strong> {% endif %}
+      {% if talk.type == "poster" %} <strong>(Poster)</strong> {% endif %} [{{ talk.date }}]
       {% if talk.link != "" %}<a href="{{ talk.link }}" target="_blank">{{ talk.title }}</a>{% endif %}{% if talk.link == "" %}{{ talk.title }}{% endif %},
       {{ talk.location }}.
     </li>
