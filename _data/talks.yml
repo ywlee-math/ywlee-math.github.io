@@ -4,7 +4,7 @@
   type: "oral"
   date: "2025-02-17"
 
-- title: "(Scheduled) Classical Analysis Seminar"
+- title: "Classical Analysis Seminar"
   location: "KU Leuven, Leuven, Belgium"
   link: "https://wis.kuleuven.be/agenda/sem-classical-ana"
   type: "oral"
@@ -34,12 +34,6 @@
   type: "oral"
   date: "2024-11-19"
 
-- title: "2024 KMS Spring Meeting"
-  location: "KAIST, Daejeon, Korea"
-  link: "https://www.kms.or.kr/conference/2024_spring/"
-  type: "oral"
-  date: "2024-04-20"
-
 - title: "The Third Korean IRTG Summer Retreat in Mathematics"
   link: ""
   location: "Jebudo, Korea"
@@ -52,17 +46,23 @@
   type: "oral"
   date: "2024-06-05"
 
+- title: "2024 KMS Spring Meeting"
+  location: "KAIST, Daejeon, Korea"
+  link: "https://www.kms.or.kr/conference/2024_spring/"
+  type: "oral"
+  date: "2024-04-20"
+
 - title: "Eleventh Bielefeld-SNU Joint Workshop in Mathematics"
   location: "SNU, Seoul, Korea"
   link: "http://irtg.math.snu.ac.kr/page_qIqd41"
   type: "poster"
-  date: "2024-04-20"
+  date: "2024-04-08"
 
 - title: "Probability Workshop in Korea 2024"
   location: "Sokcho, Korea"
   link: "https://sites.google.com/view/probability-in-korea-2024"
   type: "oral"
-  date: "2024-04-09"
+  date: "2024-01-24"
 
 - title: "Bielefeld-Melbourne-Seoul Random Matrix Seminar"
   location: "Online"
