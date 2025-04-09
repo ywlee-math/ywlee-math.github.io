@@ -5,15 +5,15 @@
       {% if publication.authors != "Yong-Woo Lee" %}
         with {% for author in publication.authors %}
           {% if author != "Yong-Woo Lee" %}
-            {{ author }}{% if forloop.last == false %}, {% endif %}
+            {{ author }}, 
           {% endif %}
         {% endfor %}
       {% endif %}
       {% if publication.link %}
-        <a href="{{ publication.link }}" target="_blank">[Journal Link]</a>
+        <a href="{{ publication.link }}" target="_blank">[Journal Link], </a>
       {% endif %}
       {% if publication.arxiv %}
-        , <a href="{{ publication.arxiv }}" target="_blank">[arXiv Link]</a>
+        <a href="{{ publication.arxiv }}" target="_blank">[arXiv Link]</a>
       {% endif %}
     </li>
   {% endfor %}
