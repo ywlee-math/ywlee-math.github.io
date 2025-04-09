@@ -5,7 +5,7 @@
     - "Yong-Woo Lee"
   journal:
   year: 2025 
-  link:
+  journal_link:
   arxiv: "https://arxiv.org/abs/2503.18310"
 
 
@@ -15,5 +15,5 @@
     - "Yong-Woo Lee"
   journal: "Random Matrices Theory Appl."
   year: 2024
-  link: "https://www.worldscientific.com/doi/10.1142/S2010326324500059?srsltid=AfmBOoqBCbmx1-TwhTn2qpICw3YFLWoOlZ29zpX74y6pWTUlVSmrOH5O"
+  journal_link: "https://www.worldscientific.com/doi/10.1142/S2010326324500059?srsltid=AfmBOoqBCbmx1-TwhTn2qpICw3YFLWoOlZ29zpX74y6pWTUlVSmrOH5O"
   arxiv: "https://arxiv.org/abs/2310.09823"
