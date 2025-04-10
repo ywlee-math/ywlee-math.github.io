@@ -9,8 +9,8 @@
           {% endif %}
         {% endfor %}
       {% endif %}
-      {% if publication.link %}
-        <a href="{{ publication.journalLink }}" target="_blank">[Journal Link], </a>
+      {% if publication.journalLink %}
+        <a href="{{ publication.journalLink }}" target="_blank">[Journal Link]</a>, 
       {% endif %}
       {% if publication.arxiv %}
         <a href="{{ publication.arxiv }}" target="_blank">[arXiv Link]</a>
