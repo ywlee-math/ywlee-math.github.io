@@ -8,7 +8,7 @@ Welcome! I am a PhD student studying in the Department of Mathematical Sciences 
 
 I am a student member of [SNU Probability Group](https://sites.google.com/view/snuprob/).
 
-<img src="_data/me.jpg" alt="Me" width="200px"/>
+<img src="img.jpg" width="200px"/>
 
 ## Preprint & Publication
 {% include publications.html %}
