@@ -1,7 +1,7 @@
 <ol>
   {% for publication in site.data.publications %}
     <li>
-      <strong>{{ publication.title }}</strong>, <a href="{{ publication.journalLink }}" target="_blank"><em>{{ publication.journal }}</em></a> ({{ publication.year }}) <br>
+      <a href="{{ publication.journalLink }}" target="_blank"><strong>{{ publication.title }}</strong></a>, <em>{{ publication.journal }}</em> ({{ publication.year }}) <br>
       {% if publication.authors != "Yong-Woo Lee" %}
         with {% for author in publication.authors %}
           {% if author != "Yong-Woo Lee" %}
