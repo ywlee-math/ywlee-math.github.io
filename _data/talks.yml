@@ -1,10 +1,16 @@
+- title: "(Scheduled) Random Matrix Theory Summer School in Japan 2025"
+  location: "RIMS, Kyoto, Japan"
+  link: "https://benoitcollins.github.io/rmt2025/"
+  type: "poster"
+  date: "2025-09-11"
+
 - title: "(Scheduled) Fifth ZiF Summer School Randomness in Physics and Mathematics"
   location: "ZiF, Bielefeld, Germany"
   link: "https://indico.physik.uni-bielefeld.de/event/220/"
   type: "oral"
   date: "2025-08-27"
   
-- title: "(Scheduled) Log-gases in Caeli Australi: Recent Developments in and Around Random Matrix Theory"
+- title: "Log-gases in Caeli Australi: Recent Developments in and Around Random Matrix Theory"
   location: "MATRIX, Creswick, Australia"
   link: "https://lica2025.github.io/"
   type: "oral"
