@@ -1,9 +1,43 @@
-<ol>
-  {% for talk in site.data.talks %}
-    <li>
-      [{{ talk.date }}] {% if talk.type == "poster" %} <strong>(Poster)</strong> {% endif %}
-      {% if talk.link != "" %}<a href="{{ talk.link }}" target="_blank">{{ talk.title }}</a>{% endif %}{% if talk.link == "" %}{{ talk.title }}{% endif %},
-      {{ talk.location }}.
-    </li>
-  {% endfor %}
-</ol>
+{% assign sorted_talks = site.data.talks | sort: "date" %}
+
+<!-- Upcoming Talks -->
+<h2>Upcoming Talks</h2>
+<ul>
+  {% assign upcoming = sorted_talks | where_exp: "item", "item.date > site.time" %}
+  {% if upcoming.size > 0 %}
+    {% for talk in upcoming %}
+      <li>
+        {% if talk.link and talk.link != "" %}
+          <a href="{{ talk.link }}">{{ talk.title }}</a>
+        {% else %}
+          {{ talk.title }}
+        {% endif %}
+        {% if talk.venue %} – {{ talk.venue }}{% endif %}
+        {% if talk.date %} ({{ talk.date | date: "%Y-%m-%d" }}){% endif %}
+      </li>
+    {% endfor %}
+  {% else %}
+    <li>No upcoming talks.</li>
+  {% endif %}
+</ul>
+
+<!-- Presented Talks -->
+<h2>Presented Talks</h2>
+<ul>
+  {% assign past = sorted_talks | where_exp: "item", "item.date <= site.time" | sort: "date" | reverse %}
+  {% if past.size > 0 %}
+    {% for talk in past %}
+      <li>
+        {% if talk.link and talk.link != "" %}
+          <a href="{{ talk.link }}">{{ talk.title }}</a>
+        {% else %}
+          {{ talk.title }}
+        {% endif %}
+        {% if talk.venue %} – {{ talk.venue }}{% endif %}
+        {% if talk.date %} ({{ talk.date | date: "%Y-%m-%d" }}){% endif %}
+      </li>
+    {% endfor %}
+  {% else %}
+    <li>No past talks.</li>
+  {% endif %}
+</ul>
