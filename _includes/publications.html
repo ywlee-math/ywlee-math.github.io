@@ -1,7 +1,14 @@
 <ol>
   {% for publication in site.data.publications %}
     <li>
-      <a href="{{ publication.journalLink }}" target="_blank"><strong>{{ publication.title }}</strong></a>, <em>{{ publication.journal }}</em> ({{ publication.year }}) <br>
+      <strong>{{ publication.title }}</strong>,
+      {% if publication.journal %}
+        <a href="{{ publication.journalLink }}" target="_blank">{{ publication.journal }}</a>
+        ({{ publication.year }})
+      {% else %}
+        preprint
+      {% endif %}
+      <br>
       {% if publication.authors != "Yong-Woo Lee" %}
         with {% for author in publication.authors %}
           {% if author != "Yong-Woo Lee" %}
