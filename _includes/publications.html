@@ -3,10 +3,10 @@
     <li>
       <strong>{{ publication.title }}</strong>,
       {% if publication.journal %}
-        <a href="{{ publication.journalLink }}" target="_blank">{{ publication.journal }}</a>
+        <a href="{{ publication.journalLink }}" target="_blank"><i>{{ publication.journal }}</i></a>
         ({{ publication.year }})
       {% else %}
-        preprint
+        <i>preprint</i>
       {% endif %}
       <br>
       {% if publication.authors != "Yong-Woo Lee" %}
