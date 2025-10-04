@@ -17,7 +17,9 @@
         {% endfor %}
       {% endif %}
       {% if publication.arxiv %}
-        <a href="{{ publication.arxiv }}" target="_blank">[arXiv Link]</a>
+        {% assign parts = publication.arxiv | split: "/" %}
+        {% assign arxiv_id = parts | last %}
+        <a href="{{ publication.arxiv }}" target="_blank"><i>arXiv:{{ arxiv_id }}</i></a>
       {% endif %}
     </li>
   {% endfor %}
