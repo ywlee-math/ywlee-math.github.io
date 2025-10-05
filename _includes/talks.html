@@ -1,13 +1,22 @@
 <ol>
   {% for talk in site.data.talks %}
     <li>
-      [{{ talk.date }}] {% if talk.type == "poster" %} <strong>(Poster)</strong> {% endif %}
-      {% if talk.link != "" %}<a href="{{ talk.link }}" target="_blank">{{ talk.title }}</a>{% endif %}{% if talk.link == "" %}{{ talk.title }}{% endif %},
+      [{{ talk.date }}] 
+      {% if talk.type == "poster" %}
+        <strong>(Poster)</strong>
+      {% endif %}
+      {% if talk.link != "" %}
+        <a href="{{ talk.link }}" target="_blank">{{ talk.title }}</a>
+      {% endif %}
+      {% else %}
+        {{ talk.title }}
+      {% endif %},
       {{ talk.location }}.
     </li>
   {% endfor %}
 </ol>
 
+<!--
 <h2>Upcoming Talks</h2>
 <ul>
   {% assign upcoming = site.data.talks | where_exp: "item", "item.date contains '??' or item.date > site.time" %}
@@ -48,3 +57,4 @@
     <li>No past talks.</li>
   {% endif %}
 </ul>
+-->
