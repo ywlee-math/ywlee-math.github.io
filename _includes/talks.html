@@ -6,10 +6,10 @@
         <strong>(Poster)</strong>
       {% endif %}
       {% if talk.link != "" %}
-        <a href="{{ talk.link }}" target="_blank">{{ talk.title }}</a>
+        <a href="{{ talk.link }}" target="_blank">{{ talk.title }}</a>,
       {% else %}
-        {{ talk.title }}
-      {% endif %},
+        {{ talk.title }},
+      {% endif %}
       {{ talk.location }}.
     </li>
   {% endfor %}
