@@ -3,8 +3,12 @@
     <li>
       <strong>{{ publication.title }}</strong>,
       {% if publication.journal %}
-        <a href="{{ publication.journalLink }}" target="_blank"><i>{{ publication.journal }}</i></a>
-        ({{ publication.year }})
+        {% if publication.year %}
+          <a href="{{ publication.journalLink }}" target="_blank"><i>{{ publication.journal }}</i></a>
+          ({{ publication.year }})
+        {% else %}
+          to appear in <i>{{ publication.journal }}</i>
+        {% endif %}
       {% else %}
         <i>preprint</i>
       {% endif %}
