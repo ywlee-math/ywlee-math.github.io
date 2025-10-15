@@ -25,6 +25,9 @@
         {% assign arxiv_id = parts | last %}
         <a href="{{ publication.arxiv }}" target="_blank"><i>arXiv:{{ arxiv_id }}</i></a>
       {% endif %}
+      {% if publication.note %}
+        | <small>{{ publication.note}}</small>
+      {% endif %}
     </li>
   {% endfor %}
 </ol>
