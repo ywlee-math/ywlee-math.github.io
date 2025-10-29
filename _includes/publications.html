@@ -7,7 +7,11 @@
           <a href="{{ publication.journalLink }}" target="_blank"><i>{{ publication.journal }}</i></a>
           ({{ publication.year }})
         {% else %}
-          to appear in <i>{{ publication.journal }}</i>
+          {% if publication.journalLink %}
+            to appear in <a href="{{ publication.journalLink }}" target="_blank"><i>{{ publication.journal }}</i></a>
+          {% else %}
+            to appear in <i>{{ publication.journal }}</i>
+          {% endif %}
         {% endif %}
       {% else %}
         <i>preprint</i>
