@@ -13,8 +13,8 @@ title: Yong-Woo Lee
 </table>
 
 
-## Preprint & Publication
+## Preprints & Publications
 {% include publications.html %}
 
-## Talks and Posters
+## Talks & Posters
 {% include talks.html %}
