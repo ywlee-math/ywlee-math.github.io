@@ -10,8 +10,9 @@ body {
 
 .main-container {
   max-width: 800px;
-  width: 90%; /* Fluid width for desktop */
-  margin: 40px auto;
+  width: 90%; /* This is the key to mobile responsiveness */
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 ul.pub-list {
