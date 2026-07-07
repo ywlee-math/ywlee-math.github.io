@@ -3,7 +3,7 @@
     - "Sung-Soo Byun"
     - "Yong-Woo Lee"
     - "Seungjoon Oh"
-  journal: J. Phys. A: Math. Theor.
+  journal: "J. Phys. A: Math. Theor."
   year:
   journalLink:
   arxiv: "https://arxiv.org/abs/2603.16339"
@@ -15,7 +15,7 @@
     - "Jonas Jalowy"
     - "Yong-Woo Lee"
     - "Grégory Schehr"
-  journal: Bernoulli
+  journal: "Bernoulli"
   year:
   journalLink:
   arxiv: "http://arxiv.org/abs/2511.09191"
@@ -26,7 +26,7 @@
     - "Gernot Akemann"
     - "Sung-Soo Byun"
     - "Yong-Woo Lee"
-  journal: Nonlinearity
+  journal: "Nonlinearity"
   year: 2025
   journalLink: "https://iopscience.iop.org/article/10.1088/1361-6544/ae11ef"
   arxiv: "https://arxiv.org/abs/2503.18310"
